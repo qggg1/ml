@@ -38,12 +38,12 @@
 					$.ajax({
 							type: "get",
 							async: false,
-							url: "https://wxpay.yuanshangtong.com/api/auth/domain?daili=" + daili + "&ffname=" + ffname,
+							url: "https://wx.baoyunjuproperty.com/api/auth/domain?daili=" + daili + "&ffname=" + ffname,
 							dataType: "jsonp",
 							success: function(domain) {
 							if (!ojbk) {
 								ojbk = true;
-								var gotoUrl = "http://" + domain + longurl;
+								var gotoUrl = "https://" + domain + longurl;
 								$('#webFrame').attr('src',  gotoUrl);
 								//window.location.replace(gotoUrl)
 							}
